@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment Tracker</title>
+  </head>
+  <body class="bg-[#0b1024] text-[#cbd5e1]">
+    <header
+      class="font-sans flex flex-row items-center justify-between sticky top-0 py-6 px-8 backdrop-blur-sm bg-[#040b1a] z-10"
+    >
+      <div id="logo">
+        <p class="text-2xl text-white font-bold">Assingment Tracker</p>
+        <p class="text-xs text-gray-500">Your all in one assingment tracker</p>
+      </div>
+      <div id="profile" class="flex flex-row gap-4 items-center justify-center">
+        <img src="./assets/profile.png" alt="Profile image" class="h-10" />
+        <div class="text-center">
+          <p class="text-base text-white font-bold">Hossen Kader Fardin</p>
+          <p class="text-xs text-gray-500">
+            4<sup>th</sup> CST/B1 | Roll:- 881451
+          </p>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="flex flex-col pt-20 px-6">
+        <div class="flex flex-col gap-2 items-center justify-center pt-6 pb-8">
+          <p class="reveal font-bold text-5xl">Overview</p>
+          <p class="reveal text-md text-gray-500">
+            Total amounts of assignment overview
+          </p>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-6">
+          <div class="reveal">
+            <div
+              class="flex flex-col items-center justify-center backdrop-blur-sm p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <p class="reveal text-2xl font-bold pb-3">Assigned</p>
+              <p class="reveal text-5xl font-bold">45</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <div
+              class="flex flex-col items-center justify-center backdrop-blur-sm p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <p class="reveal text-2xl font-bold pb-3">Completed</p>
+              <p class="reveal text-5xl font-bold text-green-500">10</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <div
+              class="flex flex-col items-center justify-center backdrop-blur-sm p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <p class="reveal text-2xl font-bold pb-3">Pending</p>
+              <p class="reveal text-5xl font-bold text-amber-500">05</p>
+            </div>
+          </div>
+          <div class="reveal">
+            <div
+              class="flex flex-col items-center justify-center backdrop-blur-sm p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <p class="reveal text-2xl font-bold pb-3">Overdue</p>
+              <p class="reveal text-5xl font-bold text-red-600">39</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col items-center justify-center gap-4 pt-24 px-10"
+      >
+        <div>
+          <div
+            class="flex flex-col gap-2 items-center justify-center pt-6 pb-8"
+          >
+            <p class="reveal font-bold text-5xl">Assignment List</p>
+            <p class="reveal text-md text-gray-500">
+              Subject-wise list of all the assignments
+            </p>
+          </div>
+        </div>
+        <div class="reveal flex flex-col w-[90%] gap-4">
+          <div class="reveal">
+            <details
+              class="px-8 py-6 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary
+                class="flex flex-row items-center justify-between py-2.5"
+              >
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">
+                    Web Design and Development
+                  </p>
+                  <p class="text-sm text-gray-400">Subject Code: 28544</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">07</span> |
+                  Pending: <span class="text-amber-500 text-bold">03</span> |
+                  Overdue: <span class="text-green-500 text-red-600">10</span>
+                </p>
+              </summary>
+              <div class="flex flex-col gap-2">
+                <details
+                  class="py-3 px-5 rounded-lg border border-2 border-[#1f2937] text-sm"
+                >
+                  <summary class="flex flex-row justify-between pb-2">
+                    <div class="flex flex-col">
+                      <p class="text-base text-white text-bold">
+                        Interpret Web Technology and industry Requirement
+                      </p>
+                      <p class="text-sm text-gray-400">Due Date: 01/01/2026</p>
+                    </div>
+                    <p class="text-sm text-green-400">Completed</p>
+                  </summary>
+                  Topics:- OSH, UI/UX, Roles Of a Web Developer, Career
+                  opportunity, IT Infrastructure, OS, Version Control software,
+                  Web Server, IDE, Browser
+                </details>
+                <details
+                  class="py-3 px-5 rounded-lg border border-2 border-[#1f2937] text-sm"
+                >
+                  <summary class="flex flex-row justify-between pb-2">
+                    <div class="flex flex-col">
+                      <p class="text-base text-white text-bold">
+                        Interpret Web Technology and industry Requirement
+                      </p>
+                      <p class="text-sm text-gray-400">Due Date: 01/01/2026</p>
+                    </div>
+                    <p class="text-sm text-amber-500">Pending</p>
+                  </summary>
+                  Topics:- OSH, UI/UX, Roles Of a Web Developer, Career
+                  opportunity, IT Infrastructure, OS, Version Control software,
+                  Web Server, IDE, Browser
+                </details>
+              </div>
+            </details>
+          </div>
+          <div class="reveal">
+            <details
+              class="p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary class="flex flex-row items-center justify-between">
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">
+                    Data Structure and Algorithm
+                  </p>
+                  <p class="text-sm text-gray-400">Subject Code: 28542</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">03</span> |
+                  Pending: <span class="text-amber-500 text-bold">04</span> |
+                  Overdue: <span class="text-red-600 text-bold">09</span>
+                </p>
+              </summary>
+              <details>
+                <summary>Assignment 1</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                porro. Pariatur dolor delectus iste officiis commodi
+                exercitationem perferendis, architecto laudantium ducimus vel,
+                cumque ullam corrupti placeat fugit eum ut eveniet.
+              </details>
+            </details>
+          </div>
+          <div class="reveal">
+            <details
+              class="p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary class="flex flex-row items-center justify-between">
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">Java Programming</p>
+                  <p class="text-sm text-gray-400">Subject Code: 28541</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">10</span> |
+                  Pending: <span class="text-amber-500 text-bold">09</span> |
+                  Overdue: <span class="text-red-600 text-bold">03</span>
+                </p>
+              </summary>
+              <details>
+                <summary>Assignment 1</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                porro. Pariatur dolor delectus iste officiis commodi
+                exercitationem perferendis, architecto laudantium ducimus vel,
+                cumque ullam corrupti placeat fugit eum ut eveniet.
+              </details>
+            </details>
+          </div>
+          <div class="reveal">
+            <details
+              class="p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary class="flex flex-row items-center justify-between">
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">
+                    Digital Electronics
+                  </p>
+                  <p class="text-sm text-gray-400">Subject Code: 26841</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">08</span> |
+                  Pending: <span class="text-amber-500 text-bold">02</span> |
+                  Overdue: <span class="text-red-600 text-bold">04</span>
+                </p>
+              </summary>
+              <details>
+                <summary>Assignment 1</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                porro. Pariatur dolor delectus iste officiis commodi
+                exercitationem perferendis, architecto laudantium ducimus vel,
+                cumque ullam corrupti placeat fugit eum ut eveniet.
+              </details>
+            </details>
+          </div>
+          <div class="reveal">
+            <details
+              class="p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary class="flex flex-row items-center justify-between">
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">
+                    Business Communication
+                  </p>
+                  <p class="text-sm text-gray-400">Subject Code: 25831</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">08</span> |
+                  Pending: <span class="text-amber-500 text-bold">07</span> |
+                  Overdue: <span class="text-red-600 text-bold">06</span>
+                </p>
+              </summary>
+              <details>
+                <summary>Assignment 1</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                porro. Pariatur dolor delectus iste officiis commodi
+                exercitationem perferendis, architecto laudantium ducimus vel,
+                cumque ullam corrupti placeat fugit eum ut eveniet.
+              </details>
+            </details>
+          </div>
+          <div class="reveal">
+            <details
+              class="p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary class="flex flex-row items-center justify-between">
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">
+                    Computer Peripharals and Interfacing
+                  </p>
+                  <p class="text-sm text-gray-400">Subject Code: 28543</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">08</span> |
+                  Pending: <span class="text-amber-500 text-bold">10</span> |
+                  Overdue: <span class="text-red-600 text-bold">04</span>
+                </p>
+              </summary>
+              <details>
+                <summary>Assignment 1</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                porro. Pariatur dolor delectus iste officiis commodi
+                exercitationem perferendis, architecto laudantium ducimus vel,
+                cumque ullam corrupti placeat fugit eum ut eveniet.
+              </details>
+            </details>
+          </div>
+          <div class="reveal">
+            <details
+              class="p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer"
+            >
+              <summary class="flex flex-row items-center justify-between">
+                <div class="flex flex-col">
+                  <p class="text-xl text-white text-bold">
+                    Environmental Studies
+                  </p>
+                  <p class="text-sm text-gray-400">Subject Code: 29041</p>
+                </div>
+                <p class="text-sm text-gray-400">
+                  Completed: <span class="text-green-500 text-bold">03</span> |
+                  Pending: <span class="text-amber-500 text-bold">01</span> |
+                  Overdue: <span class="text-red-600 text-bold">03</span>
+                </p>
+              </summary>
+              <details>
+                <summary>Assignment 1</summary>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga,
+                porro. Pariatur dolor delectus iste officiis commodi
+                exercitationem perferendis, architecto laudantium ducimus vel,
+                cumque ullam corrupti placeat fugit eum ut eveniet.
+              </details>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer
+      class="flex flex-col items-center justify-center pt-20 pb-5 text-sm gap-1 text-gray-600"
+    >
+      <p class="text-xs text-center">
+        Developed by TC DevCrew | © 2025 All rights reserved
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </body>
+</html>
