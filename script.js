@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       "Write and Execute Programs for traversing in array": {
         Date: "17/09/2025",
-        Status: "Completed",
+        Status: "Overdue",
         Description:
           "Writing Rules :- Job Name, Important Equipment and supplies, Program, Output",
       },
@@ -153,8 +153,12 @@ document.addEventListener("DOMContentLoaded", () => {
           ? "text-amber-500"
           : "text-red-500";
       
-      const borderColor = 
-        data.Status === "Completed" ? "border-green-400" : "border-[#1f2937]";
+      const borderColor =
+        data.Status === "Completed"
+          ? "border-green-400"
+          : data.Status === "Overdue"
+          ? "border-red-500"
+          : "border-[#1f2937]";
 
       container.innerHTML += `
       <details class="py-3 px-5 rounded-lg border border-2 ${borderColor} text-sm">
