@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,108 +15,72 @@
       }
     </style>
   </head>
-  <body class="bg-[#0b1024] text-[#cbd5e1]">
-    <header
-      class="font-sans flex flex-row items-center justify-between sticky top-0 py-6 px-8 backdrop-blur-sm bg-[#040b1a] z-10"
+  <body
+    class="flex items-center justify-center min-h-screen text-[#e5e7eb] text-sm bg-gradient-to-b from-[#0b1024] to-[#020617]"
+  >
+    <div
+      class="flex flex-col gap-4 border-2 border-solid border-[#1f2937] rounded-2xl backdrop-blur-sm items-center justify-center py-10 px-20"
     >
-      <div id="logo">
+      <div id="logo" class="flex flex-col items-center justify-center gap-3">
         <p class="text-base md:text-2xl text-white font-bold">
           Assingment Tracker
         </p>
         <p class="text-xs text-gray-500">Your all in one assingment tracker</p>
       </div>
-      <div
-        id="profile"
-        class="hidden md:flex md:flex-row gap-2 md:gap-4 items-center justify-center"
-      >
-        <img src="./assets/profile.png" alt="Profile image" class="h-10" />
-        <div class="text-right md:text-center">
-          <p class="text-sm md:text-base text-white font-bold pb-1">
-            Hossen Kader Fardin
-          </p>
-          <p class="text-xs text-gray-500">
-            4<sup>th</sup> CST/B1 | Roll:- 881451
-          </p>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="flex flex-col pt-20 px-6">
-        <div
-          class="flex flex-col gap-2 items-center justify-center pt-2 md:pt-6 pb-8"
-        >
-          <p class="reveal font-bold text-4xl md:text-5xl">Overview</p>
-          <p class="reveal text-sm md:text-base text-gray-500">
-            Total amounts of assignment overview
-          </p>
-        </div>
-        <div
-          class="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-6"
-        >
-          <div class="reveal">
-            <div
-              class="flex flex-col items-center justify-center backdrop-blur-sm p-8 md:p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer gap-2"
-            >
-              <p class="reveal text-xl md:text-2xl font-bold">Assigned</p>
-              <p class="reveal text-3xl md:text-5xl font-bold">45</p>
+      <form id="loginForm">
+        <div class="flex flex-col px-2.5 py-3 gap-2">
+          <div class="flex flex-row gap-2">
+            <div class="flex flex-col">
+              <label class="pb-1.5 text-base"> Student ID </label>
+              <input
+                id="studentID"
+                name="studentID"
+                type="text"
+                placeholder="881498"
+                value=""
+                class="w-full p-2.5 border-2 border-solid border-[#334155] rounded-xl focus:ring-2 focus:ring-[#20c4dd] focus:outline-none bg-none text-black"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label htmlFor="studentID" class="pb-1.5 text-base">
+                Password
+              </label>
+              <input
+                id="password"
+                name="password"
+                type="password"
+                placeholder="12345678"
+                class="w-full p-2.5 border-2 border-solid border-[#334155] text-black rounded-xl focus:ring-2 focus:ring-[#20c4dd] focus:outline-none"
+              />
             </div>
           </div>
-          <div class="reveal">
-            <div
-              class="flex flex-col items-center justify-center backdrop-blur-sm p-8 md:p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer gap-2"
+          <div class="pt-4 flex items-center justify-center">
+            <button
+              type="submit"
+              class="px-3 pt-2 pb-1 rounded-lg text-[#041315] text-base font-normal cursor-pointer bg-[#20c4dd] hover:bg-[#0891b2] transition duration-200"
             >
-              <p class="reveal text-xl md:text-2xl font-bold">Finished</p>
-              <p class="reveal text-3xl md:text-5xl font-bold text-green-500">
-                10
-              </p>
-            </div>
-          </div>
-          <div class="reveal">
-            <div
-              class="flex flex-col items-center justify-center backdrop-blur-sm p-8 md:p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer gap-2"
-            >
-              <p class="reveal text-xl md:text-2xl font-bold">Pending</p>
-              <p class="reveal text-3xl md:text-5xl font-bold text-amber-500">
-                05
-              </p>
-            </div>
-          </div>
-          <div class="reveal">
-            <div
-              class="flex flex-col items-center justify-center backdrop-blur-sm p-8 md:p-10 rounded-lg border border-2 border-[#1f2937] transition duration-200 ease-in-out hover:-translate-y-1 hover:scale-105 cursor-pointer gap-2"
-            >
-              <p class="reveal text-xl md:text-2xl font-bold">Overdue</p>
-              <p class="reveal text-3xl md:text-5xl font-bold text-red-600">
-                39
-              </p>
-            </div>
+              Login
+            </button>
           </div>
         </div>
-      </section>
-      <section
-        class="flex flex-col items-center justify-center gap-4 pt-24 px-10"
-      >
-        <div>
-          <div
-            class="flex flex-col gap-2 items-center justify-center pt-6 pb-8"
-          >
-            <p class="reveal font-bold text-4xl md:text-5xl">Assignment List</p>
-            <p class="reveal text-sm md:text-base text-gray-500">
-              Subject-wise list of all the assignments
-            </p>
-          </div>
-        </div>
-        <div id="subjects" class="reveal flex flex-col w-[90%] gap-4"></div>
-      </section>
-    </main>
-    <footer
-      class="flex flex-col items-center justify-center pt-20 pb-5 text-sm gap-1 text-gray-600"
-    >
-      <p class="text-xs text-center">
-        Developed by TC DevCrew | © 2025 All rights reserved
-      </p>
-    </footer>
-    <script src="./script.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
+      </form>
+    </div>
   </body>
+
+  <script>
+    const loginForm = document.getElementById("loginForm");
+    if (loginForm) {
+      loginForm.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const id = document.getElementById("studentID").value;
+        const password = document.getElementById("password").value;
+
+        if (id === "881511" && password === "abulanbhai") {
+          window.location.href = "dashboard.html";
+        } else {
+          alert("Wrong id or password");
+        }
+      });
+    }
+  </script>
 </html>

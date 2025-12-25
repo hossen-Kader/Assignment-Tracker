@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
           : data.Status === "Pending"
           ? "text-amber-500"
           : "text-red-500";
-      
+
       const borderColor =
         data.Status === "Completed"
           ? "border-green-400"
