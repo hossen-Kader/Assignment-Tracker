@@ -12,8 +12,18 @@
     />
     <title>Assignment Tracker</title>
     <style>
+      @font-face {
+        font-family: "Ahsing";
+        src: local("Ahsing"),
+          url("./assets/typogama-ahsing.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
       body {
         font-family: "Poppins";
+      }
+      .font-ahsing {
+        font-family: "Ahsing";
       }
     </style>
   </head>
@@ -21,19 +31,25 @@
     <header
       class="font-sans flex flex-row items-center justify-between sticky top-0 py-6 px-8 backdrop-blur-sm bg-[#040b1a] z-10"
     >
-      <div id="logo">
-        <p class="text-base md:text-2xl text-white font-bold">
-          Assingment Tracker
-        </p>
-        <p class="text-xs text-gray-500">Your all in one assingment tracker</p>
+      <div class="flex flex-row gap-4 items-center justify-center">
+        <div class="md:hidden">
+          <p class="font-ahsing text-5xl">AT</p>
+        </div>
+        <div class="hidden md:flex flex flex-col gap-1">
+          <p class="text-base md:text-2xl text-white font-bold">
+            Assingment Tracker
+          </p>
+          <p class="text-xs text-gray-500">
+            Your all in one assingment tracker
+          </p>
+        </div>
       </div>
-      <div
-        id="profile"
-        class="hidden md:flex md:flex-row gap-2 md:gap-4 items-center justify-center"
-      >
-        <img src="./assets/profile.png" alt="Profile image" class="h-10" />
+      <div id="profile" class="flex flex-row gap-2 md:gap-4 items-center justify-center">
+        <div>
+          <img src="./assets/profile.png" alt="Profile image" class="h-10" />
+        </div>
         <div class="text-right md:text-center">
-          <p class="text-sm md:text-base text-white font-bold pb-1">
+          <p class="text-xs md:text-base text-white font-bold pb-1">
             Hossen Kader Fardin
           </p>
           <p class="text-xs text-gray-500">
